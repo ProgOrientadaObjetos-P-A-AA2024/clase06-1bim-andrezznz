@@ -50,5 +50,16 @@ public class Calificacion {
     public Profesor obtenerProfesor() {
         return profesor;
     }
+    
+    @Override
+    public String toString() {
+        
+        String cadena;
+        
+        cadena = String.format("%s\n%s\n%.2f", obtenerProfesor(), obtenerNombreMateria(),
+                obtenerNota());
+        
+        return cadena;
+    }
 
 }
