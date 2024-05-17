@@ -27,8 +27,6 @@ public class Ejecutor {
             System.out.print(" Marca De La PC:      ");
             marcaPC = leer.nextLine();
             
-            System.out.println("--------------------------------------");
-            
             System.out.print(" Marca Del Procesador:     ");
             marcaPRO = leer.nextLine();
             
