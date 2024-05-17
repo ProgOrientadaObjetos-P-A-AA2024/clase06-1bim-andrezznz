@@ -1,4 +1,4 @@
-package paquete3;
+package paquete03;
 
 public class Computador {
     
@@ -6,6 +6,14 @@ public class Computador {
    private Procesador procesador;
    private Memoria memoria;
    private double costoComputador;
+   
+   public Computador(String n, Procesador p, Memoria m) {
+       
+       marca = n;
+       procesador = p;
+       memoria = m;
+       calcularComputador();
+   }
 
    public void establecerMarca(String  n) {
         
@@ -27,7 +35,7 @@ public class Computador {
     
     public void calcularComputador() {
         
-       costoComputador = memoria.obtenerCosto() + procesador.obtenerCosto();
+       costoComputador = memoria.obtenerCostoMemoria() + procesador.obtenerCostoProcesador();
         
     }
     
@@ -37,7 +45,7 @@ public class Computador {
         
     }
     
-    public Procesador obtenerProcesaro() {
+    public Procesador obtenerProcesador() {
         
         return procesador;
         
