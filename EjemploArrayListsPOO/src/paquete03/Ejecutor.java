@@ -36,8 +36,6 @@ public class Ejecutor {
             leer.nextLine();
             Procesador pro1 = new Procesador(marcaPRO, costoPRO);
             
-            System.out.println("--------------------------------------");
-            
             System.out.print(" Marca De La Memoria:     ");
             marcaME = leer.nextLine();
             
@@ -45,8 +43,6 @@ public class Ejecutor {
             costoME = leer.nextDouble();
             
             Memoria me1 = new Memoria(marcaME, costoME);
-            
-            System.out.println("--------------------------------------");
             
             Computador com = new Computador(marcaPC, pro1, me1);
             com.obtenerCalcularComputador();
