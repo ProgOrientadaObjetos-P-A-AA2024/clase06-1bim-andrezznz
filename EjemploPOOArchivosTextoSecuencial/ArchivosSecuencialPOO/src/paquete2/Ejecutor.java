@@ -23,7 +23,7 @@ public class Ejecutor {
         // Dentro del objeto se llama a los metodos sobre ArchivoEscritura
         /* 
         Se los utiliza para ingresar los nombres y tipos de contrato
-        de los 3 profesores creados de tipo Profesor
+        de los 3 profesores creados de tipo Profesorpa
         */
         // establecer el valor del atributo registro
         archivo.establecerRegistro(profesor1);

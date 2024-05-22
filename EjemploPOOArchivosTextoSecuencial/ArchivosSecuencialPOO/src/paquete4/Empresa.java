@@ -12,6 +12,7 @@ package paquete4;
 public class Empresa {
     String nombre;
     String ciudad;
+    int length;
     
     public Empresa(String n, String c){
         nombre = n;

@@ -74,12 +74,16 @@ public class ArchivoLectura {
                 // los dos primeros parametros se los relaciona
                 // con materia y nota
                 String materia = linea_partes.get(0);
-                double nota = Double.parseDouble(linea_partes.
+                double nota = Double.parseDouble(linea_partes. // parseDouble conviente a Reales
                         get(1).replace(",", "."));
                 String profesor = linea_partes.get(2);
 
                 ArrayList<String> cadenaProfesor = new ArrayList<>(
-                        Arrays.asList(profesor.split("\\|")));
+                        Arrays.asList(profesor.split("\\|"))); // "\\|" un escape para que reemplace por el pipe |
+                /*
+                si queremos reemplazar el pipe | por un asterisco *, siempre va 
+                antes \\
+                */
                 // ["Tara Hernandez", "contratado"]
                 //        0                 1
 
