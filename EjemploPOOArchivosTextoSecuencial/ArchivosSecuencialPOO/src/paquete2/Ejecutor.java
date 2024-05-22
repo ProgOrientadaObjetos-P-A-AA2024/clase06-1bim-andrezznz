@@ -20,7 +20,11 @@ public class Ejecutor {
         
         
         ArchivoEscritura archivo = new ArchivoEscritura(nombreArchivo);
-        
+        // Dentro del objeto se llama a los metodos sobre ArchivoEscritura
+        /* 
+        Se los utiliza para ingresar los nombres y tipos de contrato
+        de los 3 profesores creados de tipo Profesor
+        */
         // establecer el valor del atributo registro
         archivo.establecerRegistro(profesor1);
         // establecer en el archivo el atributo del registro
@@ -38,6 +42,11 @@ public class Ejecutor {
         
         // proceso para lectura del archivo
         ArchivoLectura lectura = new ArchivoLectura(nombreArchivo);
+        // Dentro del objeto se llama a los metodos sobre ArchivoLectura
+        /* 
+        Se los utiliza para extraer y presentar los nombres y tipos de contrato
+        de los 3 profesores creados de tipo Profesor
+        */
         lectura.establecerLista();
         // System.out.println(lectura.toString());
         System.out.println(lectura);

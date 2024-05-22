@@ -55,7 +55,8 @@ public class ArchivoLectura {
 
     // establecer valores de cada línea
     // en la lista de tipo Profesor
-    public void establecerLista() {
+    public void establecerLista() { // saca todas las lineas del archivo
+        // los guarda en la Lista de tipo ArrayList
         lista = new ArrayList<>();
         File f = new File(rutaArchivo);
 
